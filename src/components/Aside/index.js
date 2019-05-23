@@ -1,7 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
 
-export default class Aside extends Component {
-    render() {
-        return <aside>{this.props.children}</aside>;
-    }
-}
+const Aside = props => <aside>{props.children}</aside>;
+
+export default Aside;
