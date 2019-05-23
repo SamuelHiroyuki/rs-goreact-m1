@@ -9,6 +9,14 @@ class App extends Component {
         counter: 0
     };
 
+    shouldComponentUpdate(nextProps, nextState) {
+        return nextState.counter <= 10;
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+        console.log(prevState.counter);
+    }
+
     handleClick = () => {
         this.setState({ counter: this.state.counter + 1 });
     };

@@ -10,7 +10,20 @@ export default class Button extends Component {
         title: "EU SOU JESUS!!!!"
     };
 
+    componentWillMount() {
+        console.log("componentWillMount");
+    }
+
+    componentDidMount() {
+        console.log("componentDidMount");
+    }
+
+    componentWillUnmount() {
+        console.log("componentWillUnmount");
+    }
+
     render() {
+        console.log("render");
         return <button onClick={this.props.onClick}>{this.props.title}</button>;
     }
 }
